@@ -1,11 +1,10 @@
-﻿using MyProject.DAL.Models;
-using System.Data;
+﻿using System.Data;
 using System.Data.Common;
 using MySql.Data.MySqlClient;
 
 namespace MyProject.DAL
 {
-    public class UserCmdInsert : SqlMysteryContext
+    public class UserCmdInsert
     {
         public Dictionary<string, string> InsertCulpado(String comando)
         {           

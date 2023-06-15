@@ -1,12 +1,11 @@
-﻿using MyProject.DAL.Models;
-using System.Data;
+﻿using System.Data;
 using System.Data.Common;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
 
 namespace MyProject.DAL
 {
-    public class UserCmdSelect : SqlMysteryContext
+    public class UserCmdSelect
     {
         public DataTable TabelaGenerica(String comando) {
 

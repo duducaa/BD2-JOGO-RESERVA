@@ -3229,11 +3229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj",
+      "projectUniqueName": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj",
       "projectName": "MyProject.BLL.Service",
-      "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj",
+      "projectPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj",
       "packagesPath": "C:\\Users\\duduc\\.nuget\\packages\\",
-      "outputPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.BLL.Service\\obj\\",
+      "outputPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.BLL.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\duduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3251,11 +3251,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj": {
-              "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj"
+            "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj": {
+              "projectPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj"
             },
-            "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
-              "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
+            "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+              "projectPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
             }
           }
         }

@@ -3176,11 +3176,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
+      "projectUniqueName": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
       "projectName": "MyProject.DAL",
-      "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
+      "projectPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
       "packagesPath": "C:\\Users\\duduc\\.nuget\\packages\\",
-      "outputPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\obj\\",
+      "outputPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\duduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3197,8 +3197,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
-              "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
+            "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+              "projectPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
             }
           }
         }
