@@ -9,7 +9,6 @@
       "MyProject.BLL.Service/1.0.0": {
         "dependencies": {
           "MyProject.DAL": "1.0.0",
-          "MyProject.MODEL": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -627,17 +626,11 @@
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.5",
-          "MyProject.MODEL": "1.0.0",
           "MySql.EntityFrameworkCore": "7.0.2",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "MyProject.DAL.dll": {}
-        }
-      },
-      "MyProject.MODEL/1.0.0": {
-        "runtime": {
-          "MyProject.MODEL.dll": {}
         }
       }
     }
@@ -1076,11 +1069,6 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "MyProject.DAL/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "MyProject.MODEL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

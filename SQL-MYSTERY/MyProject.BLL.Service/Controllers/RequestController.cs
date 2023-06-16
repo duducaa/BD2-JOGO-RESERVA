@@ -10,15 +10,24 @@ namespace MyProject.BLL.Service.Controllers
     [ApiController]
     public class RequestController : ControllerBase
     {
+        class Result
+        {
+            public DataTable? table;
+            public Dictionary<string, string>? Error;
+        }
+
         [HttpPost(Name = "SelectQuery")]
-        public ActionResult<DataTable> SelectQuery([FromBody] string query)
+        public ActionResult SelectQuery([FromBody] string query)
         {
             try
             {
-                UserCmdSelect user = new UserCmdSelect();
-                DataTable dt = user.GetTable(query);
+                UserCmdSelect select = new UserCmdSelect();
 
-                return dt != null ? Ok(JsonConvert.SerializeObject(dt)) : NotFound();
+                Result result = new Result();
+                result.table = select.GetTable(query);
+                result.Error = select.GetError();
+
+                return result.table != null ? Ok(JsonConvert.SerializeObject(result)) : NotFound();
             }
             catch (Exception ex)
             {
@@ -27,28 +36,24 @@ namespace MyProject.BLL.Service.Controllers
         }
 
         [HttpPost("InsertQuery")]
-        public ActionResult<Dictionary<string, string>> InsertQuery([FromBody] string query)
+        public ActionResult InsertQuery([FromBody] string query)
         {
             try
             {
-                UserCmdInsert user = new UserCmdInsert();
-                Dictionary<string, string> response = user.InsertSolution(query);
+                UserCmdInsert insert = new UserCmdInsert();
+                insert.InsertSolution(query);
+                Result result = new Result();
+                result.table = null;
+                result.Error = insert.GetError();
 
-                string code;
-                if (response.TryGetValue("Code", out code))
+                if (Convert.ToInt32(result.Error["Code"]) == 1062 && query.Trim().Split(" ")[2].ToUpper() == "TB_SOLUCAO")
                 {
-                    int intCode = Convert.ToInt32(response["Code"]);
-                    if (intCode == 1062 && query.Trim().Split(" ")[2].ToUpper() == "TB_SOLUCAO")
-                    {
-                        response.Clear();
-                        response.Add("Message", "Parabéns, você encontrou o assassino!!! Devido a seu ato de bravura e coragem, " +
-                                                "o país agora conhece o nome de James Buggy, um dos melhores detetives. " +
-                                                "De agora em diante, fique atento ao seu comunicador, porque, com certeza, mais casos aparecerão. Até breve!!!");
-                        response.Add("Code", intCode.ToString());
-                    }
+                    result.Error["Message"] = "Parabéns, você encontrou o assassino!!! Devido a seu ato de bravura e coragem, " +
+                                            "o país agora conhece o nome de James Buggy, um dos melhores detetives. " +
+                                            "De agora em diante, fique atento ao seu comunicador, porque, com certeza, mais casos aparecerão. Até breve!!!";
                 }
 
-                return Ok(JsonConvert.SerializeObject(response));
+                return Ok(JsonConvert.SerializeObject(result));
             }
             catch (Exception ex)
             {

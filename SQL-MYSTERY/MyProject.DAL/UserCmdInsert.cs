@@ -4,35 +4,29 @@ using MySql.Data.MySqlClient;
 
 namespace MyProject.DAL
 {
-    public class UserCmdInsert
+    public class UserCmdInsert : UserCmd
     {
-        public Dictionary<string, string> InsertSolution(String query)
+        public void InsertSolution(String query)
         {           
-            Dictionary<string, string> response = new Dictionary<string, string>();
 
-            MySqlConnection com = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
-            MySqlCommand cmd = new MySqlCommand(query, com);
+            MySqlConnection connection = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
+            MySqlCommand cmd = this.GetCommand(query, connection);
 
             try
             {
-                com.Open();
+                connection.Open();
                 cmd.ExecuteNonQuery();
-                com.Close();
-                response.Add("Type", "No Error");
-                return response;
+                connection.Close();
             }
             catch (MySqlException ex)
             {
-                response.Add("Type", "MYSQL");
-                response.Add("Code", ex.Number.ToString());
-                response.Add("Message", ex.Message);
-                return response;
+                this.ErrorCode = ex.ErrorCode;
+                this.Message = ex.Message;
             }
             catch (System.Exception ex)
             {
-                response.Add("Type", "C#");
-                response.Add("Error", ex.Message);
-                return response;
+                this.Message = ex.Message;
+                this.ErrorCode = -1;
             }
         }
     }

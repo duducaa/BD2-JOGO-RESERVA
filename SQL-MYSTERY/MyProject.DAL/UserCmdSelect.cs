@@ -5,24 +5,33 @@ using Newtonsoft.Json;
 
 namespace MyProject.DAL
 {
-    public class UserCmdSelect
+    public class UserCmdSelect : UserCmd
     {
-        public DataTable GetTable(String query) {
+
+        public DataTable? GetTable(String query) {
 
 
-            MySqlConnection com = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
-            MySqlCommand cmd = new MySqlCommand(query, com);
+            MySqlConnection connection = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
+            MySqlCommand cmd = this.GetCommand(query, connection);
             try
             {
-                com.Open();
+                connection.Open();
                 DataTable tab = new DataTable();
                 tab.Load(cmd.ExecuteReader());
-                com.Close();
-                return tab; 
+                connection.Close();
+                return tab;
             }
-            catch
+            catch (MySqlException ex)
             {
-                return new DataTable();
+                this.ErrorCode = ex.ErrorCode;
+                this.Message = ex.Message;
+                return null;
+            }
+            catch (Exception ex)
+            {
+                this.Message = ex.Message;
+                this.ErrorCode = -1;
+                return null;
             }
         }
     }

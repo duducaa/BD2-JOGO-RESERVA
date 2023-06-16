@@ -83,7 +83,7 @@ function dynamicTable(container, dados) {
     tabela.classList.add('tabela-dinamica');
 
     const cabecalho = document.createElement('tr');
-    for (const chave in dados[0]) {
+    for (const chave in dados.table[0]) {
         const th = document.createElement('th');
         th.classList.add("list-head");
         th.textContent = chave.toUpperCase();
@@ -91,7 +91,7 @@ function dynamicTable(container, dados) {
     }
     tabela.appendChild(cabecalho);
 
-    dados.forEach((item) => {
+    dados.table.forEach((item) => {
         const linha = document.createElement('tr');
         for (const chave in item) {
             const celula = document.createElement('td');
