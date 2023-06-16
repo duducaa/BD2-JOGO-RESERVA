@@ -16,7 +16,7 @@ namespace MyProject.BLL.Service.Controllers
             try
             {
                 UserCmdSelect user = new UserCmdSelect();
-                DataTable dt = user.TabelaGenerica(query);
+                DataTable dt = user.GetTable(query);
 
                 return dt != null ? Ok(JsonConvert.SerializeObject(dt)) : NotFound();
             }
@@ -32,7 +32,7 @@ namespace MyProject.BLL.Service.Controllers
             try
             {
                 UserCmdInsert user = new UserCmdInsert();
-                Dictionary<string, string> response = user.InsertCulpado(query);
+                Dictionary<string, string> response = user.InsertSolution(query);
 
                 string code;
                 if (response.TryGetValue("Code", out code))
@@ -41,7 +41,9 @@ namespace MyProject.BLL.Service.Controllers
                     if (intCode == 1062 && query.Trim().Split(" ")[2].ToUpper() == "TB_SOLUCAO")
                     {
                         response.Clear();
-                        response.Add("Message", "Vitória");
+                        response.Add("Message", "Parabéns, você encontrou o assassino!!! Devido a seu ato de bravura e coragem, " +
+                                                "o país agora conhece o nome de James Buggy, um dos melhores detetives. " +
+                                                "De agora em diante, fique atento ao seu comunicador, porque, com certeza, mais casos aparecerão. Até breve!!!");
                         response.Add("Code", intCode.ToString());
                     }
                 }

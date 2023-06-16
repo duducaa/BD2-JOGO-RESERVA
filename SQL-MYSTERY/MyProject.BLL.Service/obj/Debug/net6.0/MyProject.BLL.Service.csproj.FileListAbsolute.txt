@@ -314,9 +314,7 @@ D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.BLL.Service\bin\De
 D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.BLL.Service\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.BLL.Service\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.BLL.Service\bin\Debug\net6.0\MyProject.DAL.dll
-D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.BLL.Service\bin\Debug\net6.0\MyProject.MODEL.dll
 D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.BLL.Service\bin\Debug\net6.0\MyProject.DAL.pdb
-D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.BLL.Service\bin\Debug\net6.0\MyProject.MODEL.pdb
 D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.BLL.Service\obj\Debug\net6.0\MyProject.BLL.Service.csproj.AssemblyReference.cache
 D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.BLL.Service\obj\Debug\net6.0\MyProject.BLL.Service.GeneratedMSBuildEditorConfig.editorconfig
 D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.BLL.Service\obj\Debug\net6.0\MyProject.BLL.Service.AssemblyInfoInputs.cache

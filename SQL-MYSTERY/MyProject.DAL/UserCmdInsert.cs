@@ -6,17 +6,17 @@ namespace MyProject.DAL
 {
     public class UserCmdInsert
     {
-        public Dictionary<string, string> InsertSolution(String comando)
+        public Dictionary<string, string> InsertSolution(String query)
         {           
             Dictionary<string, string> response = new Dictionary<string, string>();
 
             MySqlConnection com = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
-            MySqlCommand cmd = new MySqlCommand(comando, com);
+            MySqlCommand cmd = new MySqlCommand(query, com);
 
             try
             {
                 com.Open();
-                int i = cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
                 com.Close();
                 response.Add("Type", "No Error");
                 return response;
