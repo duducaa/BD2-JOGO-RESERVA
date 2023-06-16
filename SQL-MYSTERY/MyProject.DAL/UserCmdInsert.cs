@@ -6,7 +6,7 @@ namespace MyProject.DAL
 {
     public class UserCmdInsert
     {
-        public Dictionary<string, string> InsertCulpado(String comando)
+        public Dictionary<string, string> InsertSolution(String comando)
         {           
             Dictionary<string, string> response = new Dictionary<string, string>();
 
