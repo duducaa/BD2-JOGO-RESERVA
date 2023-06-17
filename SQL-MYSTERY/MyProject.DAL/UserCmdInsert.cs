@@ -9,7 +9,7 @@ namespace MyProject.DAL
         public void InsertSolution(String query)
         {           
 
-            MySqlConnection connection = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
+            MySqlConnection connection = new MySqlConnection(this.connectionString);
             MySqlCommand cmd = this.GetCommand(query, connection);
 
             try
