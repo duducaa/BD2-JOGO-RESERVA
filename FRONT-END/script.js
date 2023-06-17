@@ -41,7 +41,7 @@ function query() {
         console.log(json)
         document.querySelector(".data-table").innerHTML = ""
         document.querySelector(".error").innerHTML = ""
-        if(handleResponse(json, input)) {
+        if(handleResponse(json.Error.Message, input)) {
             dynamicTable(document.querySelector(".data-table"), JSON.parse(json));
         }
     })
@@ -52,7 +52,7 @@ function query() {
 
 function handleResponse(json, input) {
     if(json.includes(`"Code":"1064"`)) {
-        document.querySelector(".error").innerHTML = JSON.parse(json)["Message"];
+        document.querySelector(".error").innerHTML = json["Message"];
         return false;
     }
 
