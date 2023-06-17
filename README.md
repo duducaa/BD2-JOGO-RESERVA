@@ -37,6 +37,7 @@ Quando você faz uma pergunta, ela passa por todas essas partes na seguinte orde
 
     - Ao finalizar a instalação, certifique que as configurações do SGBD sejam assim: Server=localhost, Database=sql_mystery, Uid=root; Pwd=1234;
     - Após finalizar a configuração, monte o banco de dados rodando o script `SQL-MYSTERY-DDL` para montar o banco de dados;
+    - Em seguida rode o `TRIGGERS` para criar os gatilhos, objetos que, quando um comando é rodado, podem impedi-lo, fazer algo antes ou depois dele ser executado, etc.
     - Em seguida rode o `SQL-MYSTERY-DML` para inserir os dados no banco de dados.
    
 2. **Framework.NET**: Utilize o `Visual Studio` para baixar as extensões necessarias
@@ -52,14 +53,30 @@ Quando você faz uma pergunta, ela passa por todas essas partes na seguinte orde
     git clone https://github.com/duducaa/SQL-MYSTERY.git
     ```
     
-4. **Conecte o banco de dados**: Conecte o MySQL com no Visual Studio. Para isso, siga os passos abaixo
-    - Rode o projeto no `Visual Studio`, ele irá conectar automaticamente se as configurações do SGBD estiverem corretas.
+4. **String de conexão com o banco**: Conecte o MySQL com no Visual Studio. Nos arquivos UserCmdInsert.cs e UserCmdSelect.cs é possível encontrar a string de conexão com o banco. Ela terá esse formato:
+   
+  
+   ```
+   Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;
+   ```
 
+5. **Rodar o Back-end**: Para rodar o back-end, você pode fazer de dois jeitos
+   - Visual Studio:
+      - Vá na pasta SQL_MYSTERY e clique no arquivo .sln e o Visual Studio será aberto.
+      - No Visual Studio, vá no gerenciador de soluções
+      - Clique com o botão direito no projeto MyProject.BLL.Service e depois em "definir como projeto de inicialização"
+      - Inicie a depuração clicando na seta verde preenchida na parte de cima do VS
+   - Pelo terminal:
+      - Clique com o botão direito na pasta SQL_MYSTERY e em abrir no terminal
+      - rode os seguintes comandos NESSA ORDEM:
+         - dotnet restore: baixa as dependências necessárias para o projeto
+         - dotnet build: compila o projeto e suas dependências
+         - dotnet run --project .\MyProject.BLL.Service\MyProject.BLL.Service.csproj: roda o projeto de fato 
 
-5. **Rodar o Front-end**: Rodar o front end para começar a jogar.
+6. **Rodar o Front-end**: Rodar o front end para começar a jogar.
    - Vá até a pasta `FRONT-END` loocalizada no repositório e clicke duas vezes no arquivo `index` para rodar o projeto. 
 
-Nosso objetivo com este projeto é tornar o aprendizado divertido e emocionante. Esperamos que você goste de jogar este jogo tanto quanto gostamos de criá-lo! 🎉🎈
+Nosso objetivo com este projeto é tornar o aprendizado de SQL divertido e emocionante. Esperamos que você goste de jogar este jogo tanto quanto gostamos de criá-lo! 🎉🎈
 
 
 ## Observação:bangbang:
