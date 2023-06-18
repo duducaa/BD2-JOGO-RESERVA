@@ -10,9 +10,17 @@ function setup() {
         },
     })
     .then((response) => response.json())
-    .then((json) => {
-        console.log(json)
-        dynamicTable(document.querySelector(".list-table"), JSON.parse(json))
+    .then((response) => {
+        console.log(response);
+        const json = JSON.parse(response);
+        const tables = {table: []};
+        const hiddenTables = ["tb_user", "tb_misterio", "tb_pontuacao", "tb_cofre", "tb_dica"];
+        json.table.forEach(table => {
+            if (!hiddenTables.includes(table.TABLE_NAME)) {
+                tables.table.push({TABLE_NAME: table.TABLE_NAME});
+            }
+        });
+        dynamicTable(document.querySelector(".list-table"), tables);
     })
 }
 
