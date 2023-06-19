@@ -3207,19 +3207,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\duduc\\.nuget\\packages\\": {}
+    "C:\\Users\\maced\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj",
+      "projectUniqueName": "C:\\Users\\maced\\Documents\\Repositório\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj",
       "projectName": "MyProject.BLL.Service",
-      "projectPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj",
-      "packagesPath": "C:\\Users\\duduc\\.nuget\\packages\\",
-      "outputPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.BLL.Service\\obj\\",
+      "projectPath": "C:\\Users\\maced\\Documents\\Repositório\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj",
+      "packagesPath": "C:\\Users\\maced\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maced\\Documents\\Repositório\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.BLL.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\duduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maced\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3234,8 +3234,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj": {
-              "projectPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj"
+            "C:\\Users\\maced\\Documents\\Repositório\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj": {
+              "projectPath": "C:\\Users\\maced\\Documents\\Repositório\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj"
             }
           }
         }

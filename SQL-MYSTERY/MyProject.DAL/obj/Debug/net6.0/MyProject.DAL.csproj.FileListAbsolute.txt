@@ -80,3 +80,17 @@ D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6
 D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\MyProject.DAL.pdb
 D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\MyProject.DAL.genruntimeconfig.cache
 D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\ref\MyProject.DAL.dll
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\bin\Debug\net6.0\MyProject.DAL.deps.json
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\bin\Debug\net6.0\MyProject.DAL.runtimeconfig.json
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\bin\Debug\net6.0\MyProject.DAL.dll
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\bin\Debug\net6.0\MyProject.DAL.pdb
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\MyProject.DAL.csproj.AssemblyReference.cache
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\MyProject.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\MyProject.DAL.AssemblyInfoInputs.cache
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\MyProject.DAL.AssemblyInfo.cs
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\MyProject.DAL.csproj.CoreCompileInputs.cache
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\MyProject.DAL.dll
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\refint\MyProject.DAL.dll
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\MyProject.DAL.pdb
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\MyProject.DAL.genruntimeconfig.cache
+C:\Users\maced\Documents\Repositório\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\obj\Debug\net6.0\ref\MyProject.DAL.dll
