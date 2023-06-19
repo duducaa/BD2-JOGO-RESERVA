@@ -34,9 +34,9 @@ Quando você faz uma pergunta, ela passa por todas essas partes na seguinte orde
     https://dev.mysql.com/downloads/installer/
     ```
     
-
     - Ao finalizar a instalação, certifique que as configurações do SGBD sejam assim: Server=localhost, Database=sql_mystery, Uid=root; Pwd=1234;
-    - Após finalizar a configuração, monte o banco de dados rodando o script `SQL-MYSTERY-DDL` para montar o banco de dados;
+    - Após finalizar a configuração, entre na pasta MySQL Scripts e monte o banco de dados rodando o script `SQL-MYSTERY-DDL` para montar o banco de dados;
+    - Em seguida rode o `CREATE-USER` para criar o usuário que será usado na conexão, com suas devidas restrições;
     - Em seguida rode o `TRIGGERS` para criar os gatilhos, objetos que, quando um comando é rodado, podem impedi-lo, fazer algo antes ou depois dele ser executado, etc.
     - Em seguida rode o `SQL-MYSTERY-DML` para inserir os dados no banco de dados.
    
