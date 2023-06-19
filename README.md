@@ -74,7 +74,7 @@ Quando você faz uma pergunta, ela passa por todas essas partes na seguinte orde
          - dotnet run --project .\MyProject.BLL.Service\MyProject.BLL.Service.csproj: roda o projeto de fato 
 
 6. **Rodar o Front-end**: Rodar o front end para começar a jogar.
-   - Vá até a pasta `FRONT-END` loocalizada no repositório e clicke duas vezes no arquivo `index` para rodar o projeto. 
+   - Vá até a pasta `FRONT-END` localizada no repositório e clicke duas vezes no arquivo `index` para rodar o projeto. 
 
 Nosso objetivo com este projeto é tornar o aprendizado de SQL divertido e emocionante. Esperamos que você goste de jogar este jogo tanto quanto gostamos de criá-lo! 🎉🎈
 
