@@ -76,6 +76,26 @@ Quando você faz uma pergunta, ela passa por todas essas partes na seguinte orde
 6. **Rodar o Front-end**: Rodar o front end para começar a jogar.
    - Vá até a pasta `FRONT-END` localizada no repositório e clicke duas vezes no arquivo `index` para rodar o projeto. 
 
+
+# ESTRUTURAS DE ARMAZENAMENTO
+
+         - SGBD: MySQL
+         - Justificativa: foi escolhido o MySQL pela facilidade de integração com outras tecnologias, como Python e C#, pelo custo, por se tratar de um código aberto e grátis, por fim pelo suporte que há, tendo diversas comunidades para ajudar.
+         - Nome da Instância/Conexão: SQL_MYSTERY.
+         - Nome do banco de dados: SQL_MYSTERY.
+         - Detalhamento da estrutura de armazenamento: (justificar as configurações) - Projeção para 5 anos:
+           - Qual(is) Tablespaces / Filegroups que serão utilizados e a relação com os objetos do banco: será utilizado a tablespace users para as tabelas usuário, pontuação e história, e a padrão para as outras tabelas;
+           - Configuração do tamanho das extensões e bloco de disco: por se tratar de um banco relativamente pequeno, não precisar de muito desempenho e ser read-only em todas as tabelas exceto tb_solução, será utilizado o tamanho padrão das extensões e bloco de disco;
+           - Configuração do Percentual de Preenchimento do Bloco de Disco: por se tratar de um banco relativamente pequeno, não precisar de muito desempenho e ser read-only em todas as tabelas exceto tb_solução, será utilizado o percentual padrão.
+
+# ESTRATÉGIA DE BACKUP
+
+            - Backup completo regular - A cada duas semanas:
+              - Por ele ser autocontido, ou seja, contém todas as informações necessárias para restaurar o sistema ou um conjunto de dados.
+            - Backup Diferencial - A cada quatro dias:
+              - Pois ele copia todos os dados que foram alterados desde o último backup completo. Isso significa que só precisa do último backup completo e do último backup diferencial para restaurar o banco de dados.
+
+
 Nosso objetivo com este projeto é tornar o aprendizado de SQL divertido e emocionante. Esperamos que você goste de jogar este jogo tanto quanto gostamos de criá-lo! 🎉🎈
 
 
