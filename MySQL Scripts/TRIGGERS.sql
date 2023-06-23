@@ -2,53 +2,53 @@ USE sql_mystery;
 
 DELIMITER $
 
-#SÓ PODE ADICINAR NA TB_CONVITE OS PERSONAGENS CONVIDADOS DA TB_PERFIL
-CREATE TRIGGER TG_CONVITE_PERSONAGEM
+#YOU CAN ONLY ADD TO INVITE THE CHARACTERS THAT ARE GUEST AT CHAR_PROFILE
+CREATE TRIGGER invite_character
 BEFORE INSERT
-ON TB_CONVITE
+ON invite
 FOR EACH ROW
 BEGIN
-	DECLARE vPerfil TEXT;
-    SET vPerfil = (
+	DECLARE vProfile TEXT;
+    SET vProfile = (
 		SELECT
-			PL.NOME
+			p.profile_name
 		FROM
-			TB_PERSONAGEM PM
+			character_info c
 		INNER JOIN
-			TB_PERFIL PL
+			char_profile p
 		ON
-			PL.ID_PERFIL = PM.ID_PERFIL
+			p.profile_id = c.profile_id
 		WHERE
-			PM.ID_PERSONAGEM = NEW.ID_PERSONAGEM
+			c.character_id = NEW.character_id
     );
     
-    IF UPPER(vPerfil) != 'CONVIDADO' THEN
-		SIGNAL SQLSTATE '45001' SET MESSAGE_TEXT = 'ESSE PERSONAGEM É FUNCIONÁRIO';     
+    IF UPPER(vProfile) != 'GUEST' THEN
+		SIGNAL SQLSTATE '45001' SET MESSAGE_TEXT = 'This character is an employee';     
    END IF;
 END;
 
-#SÓ PODE ADICINAR NA TB_CONTRATO OS PERSONAGENS FUNCIONÁRIOS DA TB_PERFIL
-CREATE TRIGGER TG_CONTRATO_PERSONAGEM
+#YOU CAN ONLY ADD TO CONTRACT THE CHARACTERS THAT ARE EMPLOYEE AT CHAR_PROFILE
+CREATE TRIGGER contract_character
 BEFORE INSERT
-ON TB_CONTRATO
+ON contract
 FOR EACH ROW
 BEGIN
-	DECLARE vPerfil TEXT;
-    SET vPerfil = (
+	DECLARE vProfile TEXT;
+    SET vProfile = (
 		SELECT
-			PL.NOME
+			p.profile_name
 		FROM
-			TB_PERSONAGEM PM
+			character_info c
 		INNER JOIN
-			TB_PERFIL PL
+			char_profile p
 		ON
-			PL.ID_PERFIL = PM.ID_PERFIL
+			p.profile_id = c.profile_id
 		WHERE
-			PM.ID_PERSONAGEM = NEW.ID_PERSONAGEM
+			c.character_id = NEW.character_id
     );
     
-    IF UPPER(vPerfil) != 'FUNCIONÁRIO' THEN
-		SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'ESSE PERSONAGEM É CONVIDADO';     
+    IF UPPER(vProfile) != 'EMPLOYEE' THEN
+		SIGNAL SQLSTATE '45002' SET MESSAGE_TEXT = 'This character is a guest';     
    END IF;
 END;
 

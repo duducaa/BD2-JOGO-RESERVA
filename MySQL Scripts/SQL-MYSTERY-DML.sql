@@ -1,257 +1,247 @@
-#INSERT DOS TIPOS DE PERFIS DA FESTA
-INSERT INTO TB_PERFIL VALUES
-	(1, 'CONVIDADO'),
-	(2, 'FUNCIONÁRIO'),
-	(3, 'DETETIVE'),
-	(4, 'OFICIAIL');
+INSERT INTO char_profile VALUES
+	(1, 'Guest'),
+	(2, 'Employee'),
+	(3, 'Detective'),
+	(4, 'Police Officer');
  
-#INSERT DAS ESPECIES DO REINO
-INSERT INTO TB_ESPECIE VALUES
-    (1, 'ONÇA-PINTADA'),
-    (2, 'ARARA-AZUL'),
-    (3, 'TAMANDUÁ-BANDEIRA'),
-    (4, 'TUCANO'),
-    (5, 'JAGUATIRICA'),
-    (6, 'MICO-LEÃO-DOURADO'),
-    (7, 'ANTA'),
-    (8, 'PAPAGAIO-VERDADEIRO'),
-    (9, 'PIRANHA'),
-    (10, 'JABUTI'),
-    (11, 'CAPIVARA'),
-    (12, 'SAGUI'),
-    (13, 'TAMANDUÁ-MIRIM'),
-    (14, 'SUÇUARANA'),
-    (15, 'JACARÉ-AÇU'),
-    (16, 'BOTO-COR-DE-ROSA'),
-    (17, 'TATU-CANASTRA'),
-    (18, 'GAVIÃO-REAL'),
-    (19, 'VEADO-CATINGUEIRO'),
-    (20, 'TATU-BOLA'),
-    (21, 'SAPO-CURURU'),
-    (22, 'MICO-ESTRELA'),
-    (23, 'COBRA-CORAL'),
-    (24, 'LOBO-GUARÁ'),
-    (25, 'PAVÃOZINHO-DO-PARÁ'),
-    (26, 'BICHO-PREGUIÇA'),
-    (27, 'CACHORRO-VINAGRE'),
-    (28, 'PEIXE-BOI'),
-    (29, 'CARCARÁ'),
-    (30, 'SABIÁ-LARANJEIRA'),
-    (31, 'HARPIA'),
-    (32, 'RATO-DO-MATO'),
-    (33, 'PIRARUCU'),
-	(34, 'TOURO'),
-    (35, 'PANDA'), #ANDRÉ
-    (36, 'PORQUINHO DA INDIA'),#DUDU
-    (37, 'FOCA'),#ALFAYA
-    (38, 'COALA'),#RODRIGO
-    (39, 'CORUJA');#JOHN
-    
-#INSERT DE MAGIAS
-INSERT INTO TB_MAGIA VALUES
-	(1, 'AR'),
-    (2, 'ÁGUA'),
-    (3, 'TERRA'),
-    (4, 'FOGO'),
-    (5, 'TREVAS'),
-    (6, 'FLORESTA'),
-    (7, 'LUZ'),
-    (8, 'ALQUIMÍA'),
-    (9, 'GELO');
-    
-#INSERT DOS TITULOS DE NOBRESA
-INSERT INTO TB_TITULO VALUES
-	(1, 'BARÃO'),
-    (2, 'VISCONDE'),
-    (3, 'FAMÍLIA REAL'),
-    (4, 'DUQUE'),
-    (5, 'MARQUÊS'),
-    (6, 'CONDE'),
-    (7, 'BARONETE'),
-    (8, 'CAVALEIRO'),
-    (9, 'EMBAIXADORA'),
-	(10, 'NENHUM');
-    
-INSERT INTO TB_REGIAO VALUES
-	(1, 'NORTE'),
-    (2, 'SUL'),
-    (3, 'LESTE'),
-    (4, 'OESTE'),
-    (5, 'CENTRO');
-    
-INSERT INTO TB_AFILIACAO VALUES
-	(1, 'PIRATAS SUL'), ## ATENÇÃO
-    (2, 'ALQUIMISTAS DO OESTE'),
-    (3, 'SEGUIDORES DE SERPENTIUM'), #LESTE
-    (4, 'REINO DE PANDORA'), #CENTRO
-	(5, 'PROTETORES DE AMASSUNU'), #NORTE
-	(6, 'ANDARILHOS DO NORTE'),
-    (7, 'SOCIEDADE SECRETA'),
-	(8, 'NENHUMA');
+INSERT INTO specie VALUES
+    (1, 'Jaguar'),
+    (2, 'Blue macaw'),
+    (3, 'Anteater flag'),
+    (4, 'Toucan'),
+    (5, 'Ocelot'),
+    (6, 'Golden lion tamarin'),
+    (7, 'Tapirus'),
+    (8, 'Parrot'),
+    (9, 'Piranha'),
+    (10, 'Red-footed tortoise'),
+    (11, 'Capybara'),
+    (12, 'Marmoset'),
+    (13, 'Collared anteater'),
+    (14, 'Cougar'),
+    (15, 'Black caiman'),
+    (16, 'Amazon river dolphin'),
+    (17, 'Giant armadillo'),
+    (18, 'Harpy eagle'),
+    (19, 'Brocket deer'),
+    (20, 'Three-banded armadillo'),
+    (21, 'Giant toad'),
+    (22, 'Black-tufted marmoset'),
+    (23, 'Coral snake'),
+    (24, 'Maned wolf'),
+    (25, 'Sunbittern'),
+    (26, 'Sloth'),
+    (27, 'Bush dog'),
+    (28, 'Manatee'),
+    (29, 'Caracara'),
+    (30, 'Rufous-bellied thrush'),
+    (31, 'Forest rat'),
+    (32, 'Arapaima'),
+	(33, 'Bull'),
+    (34, 'Panda'), #ANDRÉ
+    (35, 'Guinea pig'),#DUDU
+    (36, 'Seal'),#ALFAYA
+    (37, 'Koala'),#RODRIGO
+    (38, 'Owl');#JOHN
 
-#ID, NOME, CAF, DATA, AFILIACAO, ESPECIE, TITULO, MAGIA, REGIAO, PERFIL
-INSERT INTO TB_PERSONAGEM VALUES
-	(1, 'ISABEL MONTENEGRO', '49276912933', '1953-12-09', 1, 1, 9, 9, 2, 1),
-    (2, 'MÁRCIO RENE BRANDÃO SOUSSA', '98164621632', '1965-07-11', 6, 31, 6, 1, 5, 1),
-	(3, 'THOMAS JERRY', '13984141544', '1996-08-21', 5, 32, 10, 6, 1, 1),
-	(4, 'FERDINANDO GONZÁLEZ', '74859645859', '1972-05-21', 4, 34, 7, 3, 5, 1),
-	(5, 'CHARLES BACON', '95753813137', '1995-11-30', 6, 27, 10, 2, 1, 2),
-	(6, 'IRACEBETH QUEEN', '65132984653', '1956-02-19', 4, 23, 3, 9, 5, 1),
-	(7, 'ARSENE LUPIN', '68348465112', '1980-09-09', 3, 15, 1, 7, 3, 1),
-	(8, 'ROBERTO D. XAVIER', '54127896156', '1950-03-14', 1, 18, 4, 7, 2, 1),
-    (9, 'EDUARDO FISCINA MENEZES MORAES', '14568974563', '2002-09-01', 2, 36, 10, 4, 2, 2),
-    (10, 'JOHN VITOR NUNES DE CARVALHO', '963852456459','2002-10-08', 7, 39, 10, 5, 1, 1),
-    (11, 'ANDRE LUCAS DO NASCIMENTO DOS SANTOS', '36521986457', '2003-02-06', 7, 35, 10, 3, 3, 3),
-    (12, 'IAGO SANTANA ALFAYA', '85245696341','2002-05-10', 7, 37, 10, 9, 4, 2),
-    (13, 'RODRIGO DE JESUS MACEDO', '556321576849', '1999-07-12', 7, 38, 10, 6, 5, 2),
-    (14, 'CLEBER ARADO MONTEZ', '85245693178', '1970-05-20', 4, 24, 5, 5, 3, 1);
+INSERT INTO magic VALUES
+	(1, 'Air'),
+    (2, 'Water'),
+    (3, 'Earth'),
+    (4, 'Fire'),
+    (5, 'Darkness'),
+    (6, 'Florest'),
+    (7, 'Light'),
+    (8, 'Alchemy'),
+    (9, 'Ice');
 
-#INSERT DOS NOMES DAS SALAS
-INSERT INTO TB_SALA VALUES
-    (1, 'HALL DE ENTRADA', 20),
-    (2, 'SALA DE ESTAR', 25),
-    (3, 'SALA DE JANTAR', 18),
-    (4, 'COZINHA', 10),
-    (5, 'ESCRITÓRIO', 8),
-    (6, 'BIBLIOTECA', 30),
-    (7, 'SALA DE MÚSICA', 15),
-    (8, 'SALA DE JOGOS', 20),
-    (9, 'SALÃO DE FESTAS', 100),
-    (10, 'QUARTO PRINCIPAL', 2),
-    (11, 'QUARTO DE HÓSPEDES', 4),
-    (12, 'BANHEIRO PRINCIPAL', 1),
-    (13, 'BANHEIRO DE HÓSPEDES', 1),
-    (14, 'SÓTÃO', 10),
-    (15, 'JARDIM DE INVERNO', 15),
-    (16, 'CAPELA', 50);
+INSERT INTO title VALUES
+	(1, 'Baron'),
+    (2, 'Viscount'),
+    (3, 'Royal family'),
+    (4, 'Duke'),
+    (5, 'Marquess'),
+    (6, 'Count'),
+    (7, 'Baronet'),
+    (8, 'Knight'),
+    (9, 'Ambassador'),
+	(10, 'None');
+    
+INSERT INTO region VALUES
+	(1, 'North'),
+    (2, 'South'),
+    (3, 'East'),
+    (4, 'West'),
+    (5, 'Center');
+    
+INSERT INTO afiliation VALUES
+	(1, 'South Pirates'), ## ATENÇÃO
+    (2, 'West Alchemists'),
+    (3, 'Serpentium followers'), #LESTE
+    (4, 'Pandora Kingdom'), #CENTRO
+	(5, 'Amassunu protectors'), #NORTE
+	(6, 'North wanderers'),
+    (7, 'Secret society'),
+	(8, 'None');
 
-#INSERT DOS ITENS DAS SALAS
-INSERT INTO TB_ITEM VALUES
-    (1, 'TAPETES VOADORES', 1),
-    (2, 'ESPELHO DO ESQUECIMENTO', 1),
-    (3, 'L MPADA DA ILUSÃO', 1),
-    (4, 'SOFÁ DOS SONHOS', 2),
-    (5, 'POLTRONAS ENCANTADAS', 2),
-    (6, 'TELA DA TRANSFORMAÇÃO', 2),
-    (7, 'MESA BANQUETEIRA', 3),
-    (8, 'TAÇAS ENVENENADAS', 3),
-    (9, 'TALHERES HIPNÓTICOS', 3),
-    (10, 'PANELA DE DESEJOS', 4),
-    (11, 'FACA DO DESTINO', 4),
-    (12, 'FRIGIDEIRA DA PETRIFICAÇÃO', 4),
-    (13, 'CANETA DA CRIATIVIDADE', 5),
-    (14, 'LIVRO DOS FEITIÇOS PROIBIDOS', 5),
-    (15, 'CADEIRA DA DESTRUIÇÃO', 5),
-    (16, 'PERGAMINHO DA SABEDORIA', 6),
-    (17, 'LIVRO DAS SOMBRAS', 6),
-    (18, 'ESTANTE ARMADILHA', 6),
-    (19, 'FLAUTA ENCANTADORA', 7),
-    (20, 'TROMPETE DO TROVÃO', 7),
-    (21, 'BATERIA EXPLOSIVA', 7),
-    (22, 'TABULEIRO DA ILUSÃO', 8),
-    (23, 'DARDOS ENVENENADOS', 8),
-    (24, 'BARALHO MALDITO', 8),
-    (25, 'BOLA DE DISCOTECA HIPNÓTICA', 9),
-    (26, 'COQUETEL DE VENENO', 9),
-    (27, 'FOGOS DE ARTIFÍCIO MÁGICOS', 9),
-    (28, 'CAMA DO DESCANSO ETERNO', 10),
-    (29, 'ESPELHO DA ILUSÃO MORTAL', 10),
-    (30, 'ABAJUR DA ESCURIDÃO', 10),
-    (31, 'TRAVESSEIRO DO SONO PROFUNDO', 11),
-    (32, 'TAPETE VOADOR ASSASSINO', 11),
-    (33, 'RELÓGIO DO TEMPO DESCONTROLADO', 11),
-    (34, 'TAPETE DE BANHO AQUECIDO', 12),
-    (35, 'SABONETE EXPLOSIVO', 12),
-    (36, 'ESCOVA DE DENTES DO AZAR', 12),
-    (37, 'TOALHA DE BANHO TRANSFORMADORA', 13),
-    (38, 'BANHEIRA DO AFOGAMENTO ILUSÓRIO', 13),
-    (39, 'VASO SANITÁRIO EXPLOSIVO', 13),
-    (40, 'BAÚ DOS SEGREDOS', 14),
-    (41, 'ARANHAS DA MALDIÇÃO', 14),
-    (42, 'VASSOURA VOADORA DA DESTRUIÇÃO', 14),
-    (43, 'PLANTAS CANTANTES', 15),
-    (44, 'ROSA DO SONO PROFUNDO', 15),
-    (45, 'ESTÁTUA DO GELO ETERNO', 15),
-    (46, 'VELAS DO ENCANTAMENTO', 16),
-    (47, 'LIVRO SAGRADO DA CONDENAÇÃO', 16),
-    (48, 'ÓRGÃO DAS ALMAS PERDIDAS', 16);
+#id, name, ppf, birth, afiliation, specie, title, magic, region, profile
+INSERT INTO character_info VALUES
+	(1, 'Isabel Montenegro', '49276912933', '1953-12-09', 1, 1, 9, 9, 2, 1),
+    (2, 'Márcio Rene Brandão Soussa', '98164621632', '1965-07-11', 6, 18, 6, 1, 5, 1),
+	(3, 'Thomas Jerry', '13984141544', '1996-08-21', 5, 31, 10, 6, 1, 1),
+	(4, 'Ferdinando González', '74859645859', '1972-05-21', 4, 33, 7, 3, 5, 1),
+	(5, 'Charles Bacon', '95753813137', '1995-11-30', 6, 27, 10, 2, 1, 2),
+	(6, 'Iracebeth Queen', '65132984653', '1956-02-19', 4, 23, 3, 9, 5, 1),
+	(7, 'Arsene Lupin', '68348465112', '1980-09-09', 3, 15, 1, 7, 3, 1),
+	(8, 'Roberto D. Xavier', '54127896156', '1950-03-14', 1, 18, 4, 7, 2, 1),
+    (9, 'Eduardo Fiscina Menezes Moraes', '14568974563', '2002-09-01', 2, 35, 10, 4, 2, 2),
+    (10, 'John Vitor Nunes de Carvalho', '963852456459','2002-10-08', 7, 38, 10, 5, 1, 1),
+    (11, 'André Lucas do Nascimento dos Santos', '36521986457', '2003-02-06', 7, 34, 10, 3, 3, 3),
+    (12, 'Iago Santana Alfaya', '85245696341','2002-05-10', 7, 36, 10, 9, 4, 2),
+    (13, 'Rodrio de Jesus Macêdo', '556321576849', '1999-07-12', 7, 37, 10, 6, 5, 2),
+    (14, 'Cleber Arado Montez', '85245693178', '1970-05-20', 4, 24, 5, 5, 3, 1);
 
-#INSERT DO CASAMENTO NA TABELA CASAMENTO
-INSERT INTO TB_EVENTO VALUES
+INSERT INTO room VALUES
+    (1, 'Entry hall', 20),
+    (2, 'Living room', 25),
+    (3, 'Dining room', 18),
+    (4, 'Kitchen', 10),
+    (5, 'Office', 8),
+    (6, 'Library', 30),
+    (7, 'Music room', 15),
+    (8, 'Game room', 20),
+    (9, 'Ballroom', 100),
+    (10, 'Master bedroom', 2),
+    (11, 'Guest bedroom', 4),
+    (12, 'Main bathroom', 1),
+    (13, 'Guest bathroom', 1),
+    (14, 'Attic', 10),
+    (15, 'Winter garden', 15),
+    (16, 'Chapel', 50);
+
+INSERT INTO item VALUES
+	(1, 'Flying Carpets', 1),
+	(2, 'Mirror of Forgetfulness', 1),
+	(3, 'Lamp of Illusion', 1),
+	(4, 'Dream Sofa', 2),
+	(5, 'Enchanted Armchairs', 2),
+	(6, 'Transformation Canvas', 2),
+	(7, 'Banquet Table', 3),
+	(8, 'Poisoned Goblets', 3),
+	(9, 'Hypnotic Cutlery', 3),
+	(10, 'Wish Pot', 4),
+	(11, 'Fate\'s Knife', 4),
+	(12, 'Petrifying Frying Pan', 4),
+	(13, 'Creativity Pen', 5),
+	(14, 'Book of Forbidden Spells', 5),
+	(15, 'Chair of Destruction', 5),
+	(16, 'Scroll of Wisdom', 6),
+	(17, 'Book of Shadows', 6),
+	(18, 'Trap Bookshelf', 6),
+	(19, 'Enchanting Flute', 7),
+	(20, 'Thunder Trumpet', 7),
+	(21, 'Explosive Drums', 7),
+	(22, 'Illusion Board', 8),
+	(23, 'Poisoned Darts', 8),
+	(24, 'Cursed Deck of Cards', 8),
+	(25, 'Hypnotic Disco Ball', 9),
+	(26, 'Poison Cocktail', 9),
+	(27, 'Magic Fireworks', 9),
+	(28, 'Bed of Eternal Rest', 10),
+	(29, 'Mirror of Lethal Illusion', 10),
+	(30, 'Lamp of Darkness', 10),
+	(31, 'Pillow of Deep Sleep', 11),
+	(32, 'Assassin Flying Carpet', 11),
+	(33, 'Uncontrollable Time Clock', 11),
+	(34, 'Heated Bath Mat', 12),
+	(35, 'Explosive Soap', 12),
+	(36, 'Toothbrush of Misfortune', 12),
+	(37, 'Transforming Bath Towel', 13),
+	(38, 'Illusory Drowning Bathtub', 13),
+	(39, 'Explosive Toilet Bowl', 13),
+	(40, 'Chest of Secrets', 14),
+	(41, 'Cursed Spiders', 14),
+	(42, 'Destruction Flying Broom', 14),
+	(43, 'Singing Plants', 15),
+	(44, 'Sleeping Beauty Rose', 15),
+	(45, 'Eternal Ice Statue', 15),
+	(46, 'Enchantment Candles', 16),
+	(47, 'Holy Book of Condemnation', 16),
+	(48, 'Organ of Lost Souls', 16);
+
+INSERT INTO mystery_event VALUES
 	(1, 'CASAMENTO');
 
-#INSERT DA PROGRAMAÇÃO DO CASAMENTO
-INSERT INTO TB_PROGRAMACAO VALUES
-    (1, 'PREPARAÇÃO DA NOIVA', 10, 1, '09:00', '11:40'),
-    (2, 'PREPARAÇÃO DO NOIVO', 10, 1, '12:00', '12:30'),
-    (3, 'ALMOÇO', 3, 1, '13:00', '14:00'),
-    (4, 'CERIMÔNIA DE CASAMENTO', 16, 1, '15:00', '16:00'),
-    (5, 'SESSÃO DE FOTOS DOS NOIVOS', 15, 1, '16:00', '16:30'),
-    (6, 'JANTAR DE CASAMENTO', 3, 1, '16:30', '17:30'),
-    (7, 'BRINDE DE CASAMENTO', 3, 1, '17:30', '18:00'),
-    (9, 'CORTE DO BOLO', 9, 1, '17:30', '18:00'),
-    (10, 'DISCURSO DOS PADRINHOS', 9, 1, '18:00', '18:30'),
-    (11, 'PRIMEIRA DANÇA DOS NOIVOS', 9, 1, '18:00', '19:00'),
-    (12, 'BANDA', 9, 1, '19:00', '20:00'),
-    (13, 'BAILE DE CASAMENTO', 9, 1, '20:00', '21:00'),
-    (14, 'LANÇAMENTO DO BUQUÊ', 9, 1, '21:00', '21:30'),
-    (15, 'FESTA DE CASAMENTO', 16, 1, '21:30', '00:00'),
-    (16, 'ENTREGA DOS PRESENTES', 9, 1, '00:00', '01:30'),
-    (17, 'DESPEDIDA DOS NOIVOS', 1, 1, '01:40', '02:30');
+INSERT INTO programming VALUES
+	(1, 'Bride\'s Preparation', 10, 1, '09:00', '11:40'),
+	(2, 'Groom\'s Preparation', 10, 1, '12:00', '12:30'),
+	(3, 'Lunch', 3, 1, '13:00', '14:00'),
+	(4, 'Wedding Ceremony', 16, 1, '15:00', '16:00'),
+	(5, 'Bride and Groom Photo Session', 15, 1, '16:00', '16:30'),
+	(6, 'Wedding Dinner', 3, 1, '16:30', '17:30'),
+	(7, 'Wedding Toast', 3, 1, '17:30', '18:00'),
+	(9, 'Cake Cutting', 9, 1, '17:30', '18:00'),
+	(10, 'Best Man Speech', 9, 1, '18:00', '18:30'),
+	(11, 'First Dance', 9, 1, '18:00', '19:00'),
+	(12, 'Live Band', 9, 1, '19:00', '20:00'),
+	(13, 'Wedding Dance', 9, 1, '20:00', '21:00'),
+	(14, 'Bouquet Toss', 9, 1, '21:00', '21:30'),
+	(15, 'Wedding Reception', 16, 1, '21:30', '00:00'),
+	(16, 'Gift Exchange', 9, 1, '00:00', '01:30'),
+	(17, 'Farewell of the Newlyweds', 1, 1, '01:40', '02:30');
 
-INSERT INTO TB_FUNCAO VALUES
-	(1, 'MORDOMO'),
-	(2, 'CERIMONIALISTA'),
-	(3, 'SEGURANÇA'),
-	(4, 'FLORISTA'),
-	(5, 'ESTILISTA'),
-	(6, 'MÚSICO'),
-	(7, 'FOTÓGRAFO'),
-	(8, 'VIDEÓGRAFO'),
-	(9, 'CHEFE DE COZINHA'),
-	(10, 'GARÇOM'),
-	(11, 'MOTORISTA'),
-	(12, 'COORDENADOR DE EVENTOS'),
-	(13, 'MAÎTRE'),
-	(14, 'BARTENDER'),
-	(15, 'CAMAREIRO'),
-	(16, 'COPEIRO'),
-	(17, 'PADEIRO'),
-	(18, 'CHEF DE CONFEITARIA'),
-	(19, 'RECEPCIONISTA'),
-	(20, 'LIMPEZA');
+INSERT INTO employee_function VALUES
+	(1, 'Butler'),
+	(2, 'Event Planner'),
+	(3, 'Security Guard'),
+	(4, 'Florist'),
+	(5, 'Stylist'),
+	(6, 'Musician'),
+	(7, 'Photographer'),
+	(8, 'Videographer'),
+	(9, 'Head Chef'),
+	(10, 'Waiter'),
+	(11, 'Driver'),
+	(12, 'Event Coordinator'),
+	(13, 'Maître d\'Hôtel'),
+	(14, 'Bartender'),
+	(15, 'Housekeeper'),
+	(16, 'Server'),
+	(17, 'Baker'),
+	(18, 'Pastry Chef'),
+	(19, 'Receptionist'),
+	(20, 'Cleaning Staff');
 
-INSERT INTO TB_CONVITE VALUES
+INSERT INTO invite VALUES
     (1, 1, 10, 1),
     (2, 1, 14, 1),
-    (3, 1, 11, 1),
+    (3, 1, 8, 1),
     (4, 1, 4, 1),
     (5, 1, 2, 1);
 
-#ID, EVENTO, PERSONAGEM, FUNCAO
-INSERT INTO TB_CONTRATO VALUES
+INSERT INTO contract VALUES
     (1, 1, 9, 11), #DUDU
     (2, 1, 13, 20), #RODRIGO
     (3, 1, 12, 10); #ALFAYA
 
-INSERT INTO TB_PELE VALUES
-    (1, 'AMARELO'),#ONÇA, JAGUATIRICA, JABUTI, COBRA-CORAL, PAVÃOZINHO-DO-PARÁ
-    (2, 'PRETO'),#ONÇA, TUCANO, JAGUATIRICA,CARCARÁ, JABUTI, TAMANDUÁ-MIRIM, GAVIÃO-REAL, TATU-BOLA, COBRA-CORAL, HARPIA, PIRARUCU, TOURO, PANDA
-    (3, 'AZUL'), #ARARA-AZUL
-    (4, 'DOURADO'), #MICO-LEÃO-DOURADO
-    (5, 'MARROM'),#ANTA,  CAPIVARA, SUÇUARANA, TATU CANASTRA, VEADO-CATINGUEIRO, SAPO-CURURU, LOBO-GUARÁ, PAVÃOZINHO-DO-PARÁ, CACHORRO-VINAGRE, SABIÁ-LARANJEIRA, PORQUIIENHO-DA-INDIA
-    (6, 'VERDE'),#PAPAGAIO-VERDADEIRO, JACARÉ-AÇU
-    (7, 'CINZA'), #PIRANHA, SAGUI,MICO-ESTRELA, BICHO-PREGUIÇA, PEIXE-BOI, RATO-DO-MATO, FOCA, COALA, CORUJA,
-    (8, 'LARANJA'), #PIRANHA
-    (9, 'BRANCO'), #TAMANDUÁ-MIRIM, GAVIÃO-REAL, CARCARÁ, HARPIA, PANDA, PORQUINHO DA INDIA
-    (10, 'ROSA'), #BOTO COR DE ROSA
-    (11, 'VERMELHO'); #COBRA CORA, PAVÃOZINHO-DO-PARÁ
+INSERT INTO skin VALUES
+    (1, 'Yellow'),#ONÇA, JAGUATIRICA, JABUTI, COBRA-CORAL, PAVÃOZINHO-DO-PARÁ
+    (2, 'Black'),#ONÇA, TUCANO, JAGUATIRICA,CARCARÁ, JABUTI, TAMANDUÁ-MIRIM, GAVIÃO-REAL, TATU-BOLA, COBRA-CORAL, HARPIA, PIRARUCU, TOURO, PANDA
+    (3, 'Blue'), #ARARA-AZUL
+    (4, 'Golden'), #MICO-LEÃO-DOURADO
+    (5, 'Brown'),#ANTA,  CAPIVARA, SUÇUARANA, TATU CANASTRA, VEADO-CATINGUEIRO, SAPO-CURURU, LOBO-GUARÁ, PAVÃOZINHO-DO-PARÁ, CACHORRO-VINAGRE, SABIÁ-LARANJEIRA, PORQUIIENHO-DA-INDIA
+    (6, 'Green'),#PAPAGAIO-VERDADEIRO, JACARÉ-AÇU
+    (7, 'Gray'), #PIRANHA, SAGUI,MICO-ESTRELA, BICHO-PREGUIÇA, PEIXE-BOI, RATO-DO-MATO, FOCA, COALA, CORUJA,
+    (8, 'Orange'), #PIRANHA
+    (9, 'White'), #TAMANDUÁ-MIRIM, GAVIÃO-REAL, CARCARÁ, HARPIA, PANDA, PORQUINHO DA INDIA
+    (10, 'Pink'), #BOTO COR DE ROSA
+    (11, 'Red'); #COBRA CORA, PAVÃOZINHO-DO-PARÁ
 
 #ID, PERSONAGEM, PELO, OLHOS, ALTURA
-INSERT INTO TB_MORFOLOGIA VALUES
+INSERT INTO morphology VALUES
     (1, 9, 2, 'VERDE',1 );
 
-INSERT INTO TB_DICA VALUES
+INSERT INTO hint VALUES
     (1, 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'),
     (2, 'DUIS FINIBUS TURPIS URNA, NON AUCTOR DIAM TEMPOR AT.'),
     (3, 'MAECENAS AC ELEIFEND LEO, VEHICULA TINCIDUNT AUGUE.'),
@@ -275,7 +265,7 @@ INSERT INTO TB_DICA VALUES
     (21, 'CRAS PORTTITOR EGESTAS IPSUM NON MATTIS. NAM VITAE DOLOR HENDRERIT,'),
     (22, 'CURSUS FELIS VITAE, LACINIA IPSUM.'),
     (23, 'VESTIBULUM ANTE IPSUM PRIMIS IN FAUCIBUS ORCI LUCTUS ET ULTRICES POSUERE CUBILIA CURAE;'),
-    (24, 'VISHHH... ESSE TÁ DOIDO QUE NEM PEDRA | HARLEY: MAS OLHA, PARECE QUE..., LÁ DO DEPARTAMENTO ENCONTROU ALGO PRÓXIMO AO CORPO'),#HARLEY
+    (24, 'VISHHH... This guy is as high as a kite | HARLEY: But look, looks like..., over there in the department, they found something near the body'),#HARLEY
     (25, 'SUSPENDISSE AC URNA SED SEM ELEMENTUM VIVERRA PLACERAT IN URNA.'),
     (26, 'SED ELIT AUGUE, EFFICITUR ET CONDIMENTUM EGET, LUCTUS EGET ERAT.'),
     (27, 'AENEAN MALESUADA ACCUMSAN SEM. NULLAM AT NIBH SEMPER,'),
@@ -291,7 +281,7 @@ INSERT INTO TB_DICA VALUES
     (37, 'NAM SODALES NISL AT EST FINIBUS PORTA. VIVAMUS SED SOLLICITUDIN TURPIS.'),
     (38, 'NULLA SEMPER LOBORTIS QUAM, QUIS HENDRERIT MASSA FAUCIBUS ALIQUET.'),
     (39, 'CURABITUR VARIUS ARCU IACULIS IPSUM LUCTUS, VEL PULVINAR NUNC SCELERISQUE.'),
-    (40, ' MEUS PARÁBENS!!!! VOCÊ CHEGOU AO CHECKPOINT'),##HARLEY
+    (40, 'Congratulations!!! You have reached the checkpoint'),##HARLEY
     (41, 'PELLENTESQUE FAUCIBUS, QUAM AT CONDIMENTUM SEMPER, EX METUS CONSEQUAT QUAM,'),
     (42, 'AC LOBORTIS MAGNA MI SIT AMET EROS. VIVAMUS NON NEQUE FEUGIAT,'),
     (43, 'LUCTUS MAURIS IN, FINIBUS NIBH. INTEGER AC BIBENDUM EROS.'),
@@ -353,271 +343,201 @@ INSERT INTO TB_DICA VALUES
     (99, 'VESTIBULUM ANTE IPSUM PRIMIS IN FAUCIBUS ORCI LUCTUS ET ULTRICES POSUERE CUBILIA CURAE;'),
     (100, 'IN VOLUTPAT MI VITAE PULVINAR SAGITTIS.');
 
-INSERT INTO TB_DEPOIMENTO VALUES
-    (1, 2, 'EU ESTAVA VOANDO DEPOIS DE TER PEGO O BUQUÊ. REALMENTE ESTOU PERPLEXO UMA MULHER TÃO PODEROSA COMO ELA, QUE ESTRANHO!! ENFIM, NÃO SEI MUITA COISA, MAS VI...  MUITO ATORMENTADO, ELE PARECE TER VISTO ALGO...'),
-    (2, 3, 'EU NÃO VI NADA, EU JURO!!! EU SÓ ESTAVA INDO DAR UMA CAMINHADA QUANDO ESCUTEI ALGO ATRÁS DO MATO. COMO SOU CURIOSO FUI DAR UMA OLHADINHA. PARECIA A EMBAIXADORA GRITANDO COM UM MACHO COMO SE TIVESSE COM MEDO. ELA DIZIA PARA SE AFASTAR, MAS EU NÃO ESCUTEI MAIS NINGUÉM... ENTÃO OUVI UM RUGIDO E UM GRITO DISTANCAINDO. FOI AI QUE SAÍ CORRENDO'),
-    (3, 14, 'NÃO VI MUITA COISA. MAS SE BEM QUE VI... FERDINANDO GONZÁLEZ, PASSANDO RÁPIDO POR LÁ, MEIA HORA ANTES DO QUE VOCÊ ESTÁ DIZENDO TER SIDO A HORA DO ASSASSINATO. MAS FOI RÁPIDO MESMO, NÃO DARIA TEMPO NEM DE CONVERSAR'),
-    (4, 4, 'PELA COBRA NORATO, O QUE TÁ ACONTECENDO? QUEM É VOCÊ? NÃO POR FAVOR, NÃO ME MACHUQUE!!!! SOCORRO... NÃO ME MATE MONSTRO. ALGUÉM ME SALVAAAAAAA  | DICA: 24'),
-    (5, 11, 'EU ESTAVA VASCULHO A ÁREA E ENCONTREI ESSA CARTA. PARECE SER UMA CARTA DE AMOR... E PARECE QUE TEM UMA SIGLA DO NOMEM DO SEU AMANTE: "F.G". E TAMBÉM TEM ESSE LÍRIO ESTRANHO JUNTO, BEM CHEIROSO POR SINAL...  ...ARGHH...  ...ARRRGH... AN? QUE? NÃO!!! POR FAVOR SE AFASTEM!!! NÃO ME MATEM SEUS MONSTROS. NÃOOOOOOO!! (ELE NO SURTO ESCORREGA E BATE A CABEÇA, COM ISSO VEM A FALECER)  | DICA: 40'),
-    (6, 1, 'EU NÃO SEI O QUE HOUVE. EM UM MINUTO ELA TÁ AQUI SENDO GROSSA E RANZINZA... E DO NADA... PUFF.   ISSO DEVE SER ALGO RELACIONADO A POLITICA. FIQUEI SABENDO QUE ELA TINHA RICHA COM...');
+INSERT INTO testimony VALUES
+    (1, 2, 'I was flying after catching the bouquet. I\'m truly amazed by such a powerful woman. How strange! Anyway, I don\'t know much, but I saw... He seems very troubled, like he saw something...'),
+    (2, 3, 'I didn\'t see anything, I swear!!! I was just going for a walk when I heard something behind the bushes. Being curious, I took a peek. It sounded like the ambassador shouting at a male as if she were scared. She was telling him to stay away, but I didn\'t hear anyone else... Then I heard a roar and a distant scream. That\'s when I ran away.'),
+    (3, 14, 'I didn\'t see much. But come to think of it... Ferdinand Gonzalez hurriedly passed by there, half an hour before the alleged time of the murder you\'re talking about. But it was really quick, not even enough time to talk.'),
+    (4, 4, 'By the snake Norato, what\'s happening? Who are you? Please, don\'t hurt me!!!! Help... Don\'t kill me, monster. Someone save meeeee | Hint: 24'),
+    (5, 11, 'I was scouring the area and found this letter. It seems to be a love letter... and there\'s a initials of your lover\'s name: "F.G." And there\'s also this strange lily accompanying it, quite fragrant by the way... ...ARGHH... ...ARRRGH... What? No!!! Please stay away!!! Don\'t kill me, you monsters. Nooooooo!! (He goes into a frenzy, slips, and hits his head, subsequently passing away) | Hint: 40'),
+    (6, 1, 'I don\'t know what happened. One minute she\'s here, being rude and grumpy... and then... poof. This must be something related to politics. I heard she had connections with...');
 
 
 ##___________________________________________________________________________________________________________
 ## 							 INSERT LIXO
 DELIMITER //
 
-#DROP FUNCTION IF EXISTS GERAR_CPF;
-CREATE FUNCTION GERAR_CPF() RETURNS CHAR(11)  READS SQL DATA
+CREATE FUNCTION generate_ppf() RETURNS CHAR(11) READS SQL DATA
 BEGIN
-	DECLARE CPF CHAR(11);
-	DECLARE DIGITOS_VERIFICADORES CHAR(2);
-	DECLARE SOMA_DIGITOS1 INT;
-	DECLARE SOMA_DIGITOS2 INT;
-	DECLARE DIGITO_VERIFICADOR1 INT;
-	DECLARE DIGITO_VERIFICADOR2 INT;
+    DECLARE ppf CHAR(11);
+    DECLARE validator_digits CHAR(2);
+    DECLARE sum_digits_1 INT;
+    DECLARE sum_digits_2 INT;
+    DECLARE validator_digit_1 INT;
+    DECLARE validator_digit_2 INT;
 
-	-- GERA 9 DÍGITOS ALEATÓRIOS PARA O CPF
-	SET CPF = '';
-	SET @I = 1;
+    SET ppf = '';
+    SET @I = 1;
 
-	WHILE @I <= 9 DO
-    	SET CPF = CONCAT(CPF, FLOOR(RAND() * 9));
-    	SET @I = @I + 1;
-	END WHILE;
+    WHILE @I <= 9 DO
+        SET ppf = CONCAT(ppf, FLOOR(RAND() * 9));
+        SET @I = @I + 1;
+    END WHILE;
 
-	-- CALCULA OS DÍGITOS VERIFICADORES
-	SET SOMA_DIGITOS1 = (
-    	SELECT
-        	(SUBSTRING(CPF, 1, 1) * 10) +
-        	(SUBSTRING(CPF, 2, 1) * 9) +
-        	(SUBSTRING(CPF, 3, 1) * 8) +
-        	(SUBSTRING(CPF, 4, 1) * 7) +
-        	(SUBSTRING(CPF, 5, 1) * 6) +
-        	(SUBSTRING(CPF, 6, 1) * 5) +
-        	(SUBSTRING(CPF, 7, 1) * 4) +
-        	(SUBSTRING(CPF, 8, 1) * 3) +
-        	(SUBSTRING(CPF, 9, 1) * 2)
-	) % 11;
+    SET sum_digits_1 = (
+        SELECT
+            (SUBSTRING(ppf, 1, 1) * 10) +
+            (SUBSTRING(ppf, 2, 1) * 9) +
+            (SUBSTRING(ppf, 3, 1) * 8) +
+            (SUBSTRING(ppf, 4, 1) * 7) +
+            (SUBSTRING(ppf, 5, 1) * 6) +
+            (SUBSTRING(ppf, 6, 1) * 5) +
+            (SUBSTRING(ppf, 7, 1) * 4) +
+            (SUBSTRING(ppf, 8, 1) * 3) +
+            (SUBSTRING(ppf, 9, 1) * 2)
+    ) % 11;
 
-	IF SOMA_DIGITOS1 < 2 THEN
-    	SET DIGITO_VERIFICADOR1 = 0;
-	ELSE
-    	SET DIGITO_VERIFICADOR1 = 11 - SOMA_DIGITOS1;
-	END IF;
+    IF sum_digits_1 < 2 THEN
+        SET validator_digit_1 = sum_digits_1;
+    ELSE
+        SET validator_digit_1 = 11 - sum_digits_1;
+    END IF;
 
-	SET SOMA_DIGITOS2 = (
-    	SELECT
-        	(SUBSTRING(CPF, 1, 1) * 11) +
-        	(SUBSTRING(CPF, 2, 1) * 10) +
-        	(SUBSTRING(CPF, 3, 1) * 9) +
-        	(SUBSTRING(CPF, 4, 1) * 8) +
-        	(SUBSTRING(CPF, 5, 1) * 7) +
-        	(SUBSTRING(CPF, 6, 1) * 6) +
-        	(SUBSTRING(CPF, 7, 1) * 5) +
-        	(SUBSTRING(CPF, 8, 1) * 4) +
-        	(SUBSTRING(CPF, 9, 1) * 3) +
-        	(DIGITO_VERIFICADOR1 * 2)
-	) % 11;
+    SET sum_digits_2 = (
+        SELECT
+            (SUBSTRING(ppf, 1, 1) * 11) +
+            (SUBSTRING(ppf, 2, 1) * 10) +
+            (SUBSTRING(ppf, 3, 1) * 9) +
+            (SUBSTRING(ppf, 4, 1) * 8) +
+            (SUBSTRING(ppf, 5, 1) * 7) +
+            (SUBSTRING(ppf, 6, 1) * 6) +
+            (SUBSTRING(ppf, 7, 1) * 5) +
+            (SUBSTRING(ppf, 8, 1) * 4) +
+            (SUBSTRING(ppf, 9, 1) * 3) +
+            (validator_digit_1 * 2)
+    ) % 11;
 
-	IF SOMA_DIGITOS2 < 2 THEN
-    	SET DIGITO_VERIFICADOR2 = 0;
-	ELSE
-    	SET DIGITO_VERIFICADOR2 = 11 - SOMA_DIGITOS2;
-	END IF;
+    IF sum_digits_2 < 2 THEN
+        SET validator_digit_2 = sum_digits_2;
+    ELSE
+        SET validator_digit_2 = 11 - sum_digits_2;
+    END IF;
  
-	SET CPF = CONCAT(CPF, CAST(DIGITO_VERIFICADOR1 AS CHAR), CAST(DIGITO_VERIFICADOR2 AS CHAR));
+    SET ppf = CONCAT(ppf, CAST(validator_digit_1 AS CHAR), CAST(validator_digit_2 AS CHAR));
     
-	RETURN CPF;
+    RETURN ppf;
 END;
 
 // DELIMITER ;
 
 
 DELIMITER //
-#DROP FUNCTION IF EXISTS ESCOLHER_NOME;
-CREATE FUNCTION ESCOLHER_NOME()
+CREATE FUNCTION choose_name()
 RETURNS VARCHAR(255) DETERMINISTIC
 BEGIN
-	DECLARE INDICE INT;
-	DECLARE NOME VARCHAR(255);
-	DECLARE NOMES_ARRAY TEXT;
+    DECLARE name_index INT;
+    DECLARE chosen_name VARCHAR(255);
+    DECLARE names_array JSON;
     
-	-- DEFINIR O ARRAY DE NOMES
-	SET NOMES_ARRAY = '[
-	"JOÃO SILVA",
-	"MARIA SANTOS",
-	"PEDRO ALMEIDA",
-	"ANA OLIVEIRA",
-	"LUIZA FERNANDES",
-	"CARLOS LIMA",
-	"JULIANA PEREIRA",
-	"RAFAEL SOUSA",
-	"GABRIELA COSTA",
-	"LUCAS GONÇALVES",
-	"LAURA RODRIGUES",
-	"FERNANDO CARDOSO",
-	"MARIANA MENDES",
-	"GUSTAVO CASTRO",
-	"CAMILA CARVALHO",
-	"RICARDO SANTOS",
-	"ISABELA FERNANDES",
-	"DIEGO OLIVEIRA",
-	"BIANCA PEREIRA",
-	"EDUARDO ALVES",
-	"AMANDA RIBEIRO",
-	"ANTÔNIO RODRIGUES",
-	"CAROLINA LIMA",
-	"MARCELO CASTRO",
-	"HELENA CARVALHO",
-	"RODRIGO SOUSA",
-	"LETÍCIA COSTA",
-	"JOSÉ GONÇALVES",
-	"FERNANDA RODRIGUES",
-	"MARCOS SANTOS",
-	"LARISSA OLIVEIRA",
-	"SÉRGIO PEREIRA",
-	"PATRÍCIA ALMEIDA",
-	"ROBERTO CARDOSO",
-	"NATÁLIA MENDES",
-	"ANDRÉ CASTRO",
-	"VITÓRIA CARVALHO",
-	"FÁBIO ALVES",
-	"JÚLIA RIBEIRO",
-	"RENATO RODRIGUES",
-	"BRUNA LIMA",
-	"PAULO CASTRO",
-	"TATIANA CARVALHO",
-	"CRISTIANO SOUSA",
-	"VANESSA COSTA",
-	"HUGO GONÇALVES",
-	"LORENA RODRIGUES",
-	"GERALDO SANTOS",
-	"PRISCILA OLIVEIRA",
-	"ALEXANDRE PEREIRA",
-	"FÁTIMA RIBEIRO",
-	"WAGNER CARVALHO",
-	"MARIANA ALVES",
-	"ROBERTO RODRIGUES",
-	"CARLA LIMA",
-	"DANIEL CASTRO",
-	"CLÁUDIA CARVALHO",
-	"SANDRO SOUSA",
-	"SILVANA COSTA",
-	"RAFAEL GONÇALVES",
-	"DANIELA RODRIGUES",
-	"HENRIQUE SANTOS",
-	"TALITA OLIVEIRA",
-	"RODRIGO PEREIRA",
-	"BÁRBARA ALMEIDA",
-	"LUCIANO CARDOSO",
-	"CINTIA MENDES",
-	"GUILHERME CASTRO",
-	"NATALIA CARVALHO",
-	"RAUL ALVES",
-	"SABRINA RIBEIRO",
-	"ANDRÉ RODRIGUES",
-	"CRISTINA LIMA",
-	"LEANDRO CASTRO",
-	"MICHELE CARVALHO",
-	"MARCELO SOUSA",
-	"ALINE COSTA",
-	"BRUNO GONÇALVES",
-	"MÁRCIA RODRIGUES",
-	"VITOR SANTOS",
-	"CAMILA OLIVEIRA",
-	"FELIPE PEREIRA",
-	"LÍVIA ALMEIDA",
-	"RICARDO RODRIGUES",
-	"ANA LIMA",
-	"RENAN CASTRO",
-	"FERNANDA CARVALHO",
-	"RAFAEL SOUSA",
-	"LETÍCIA COSTA",
-	"JOSÉ GONÇALVES",
-	"FERNANDA RODRIGUES",
-	"MARCOS SANTOS",
-	"LARISSA OLIVEIRA",
-	"SÉRGIO PEREIRA",
-	"PATRÍCIA ALMEIDA",
-	"ROBERTO CARDOSO",
-	"NATÁLIA MENDES",
-	"ANDRÉ CASTRO",
-	"VITÓRIA CARVALHO",
-	"FÁBIO ALVES",
-	"JÚLIA RIBEIRO",
-	"RENATO RODRIGUES",
-	"BRUNA LIMA",
-	"PAULO CASTRO",
-	"TATIANA CARVALHO",
-	"CRISTIANO SOUSA",
-	"VANESSA COSTA",
-	"HUGO GONÇALVES",
-	"LORENA RODRIGUES",
-	"GERALDO SANTOS",
-	"PRISCILA OLIVEIRA",
-	"ALEXANDRE PEREIRA",
-	"FÁTIMA RIBEIRO",
-	"WAGNER CARVALHO",
-	"MARIANA ALVES",
-	"ROBERTO RODRIGUES",
-	"CARLA LIMA",
-	"DANIEL CASTRO",
-	"CLÁUDIA CARVALHO",
-	"SANDRO SOUSA",
-	"SILVANA COSTA",
-	"RAFAEL GONÇALVES",
-	"DANIELA RODRIGUES",
-	"HENRIQUE SANTOS",
-	"TALITA OLIVEIRA",
-	"RODRIGO PEREIRA",
-	"BÁRBARA ALMEIDA",
-	"LUCIANO CARDOSO",
-	"CINTIA MENDES",
-	"GUILHERME CASTRO",
-	"NATALIA CARVALHO",
-	"RAUL ALVES",
-	"SABRINA RIBEIRO",
-	"ANDRÉ RODRIGUES",
-	"CRISTINA LIMA",
-	"LEANDRO CASTRO",
-	"MICHELE CARVALHO",
-	"MARCELO SOUSA",
-	"ALINE COSTA",
-	"BRUNO GONÇALVES",
-	"MÁRCIA RODRIGUES",
-	"VITOR SANTOS",
-	"CAMILA OLIVEIRA",
-	"FELIPE PEREIRA",
-	"LÍVIA ALMEIDA",
-	"RICARDO RODRIGUES",
-	"ANA LIMA",
-	"RENAN CASTRO",
-	"FERNANDA CARVALHO"
-]';
+    -- DEFINIR O ARRAY DE NOMES
+    SET names_array = JSON_ARRAY(
+        'João Silva',
+        'Maria Santos',
+        'Pedro Almeida',
+        'Ana Oliveira',
+        'Luiza Fernandes',
+        'Carlos Lima',
+        'Juliana Pereira',
+        'Rafael Sousa',
+        'Gabriela Costa',
+        'Lucas Gonçalves',
+        'Laura Rodrigues',
+        'Fernando Cardoso',
+        'Mariana Mendes',
+        'Gustavo Castro',
+        'Camila Carvalho',
+        'Ricardo Santos',
+        'Isabela Fernandes',
+        'Diego Oliveira',
+        'Bianca Pereira',
+        'Eduardo Alves',
+        'Amanda Ribeiro',
+        'Antônio Rodrigues',
+        'Carolina Lima',
+        'Marcelo Castro',
+        'Helena Carvalho',
+        'Rodrigo Sousa',
+        'Letícia Costa',
+        'José Gonçalves',
+        'Fernanda Rodrigues',
+        'Marcos Santos',
+        'Larissa Oliveira',
+        'Sérgio Pereira',
+        'Patrícia Almeida',
+        'Roberto Cardoso',
+        'Natália Mendes',
+        'André Castro',
+        'Vitória Carvalho',
+        'Fábio Alves',
+        'Júlia Ribeiro',
+        'Renato Rodrigues',
+        'Bruna Lima',
+        'Paulo Castro',
+        'Tatiana Carvalho',
+        'Cristiano Sousa',
+        'Vanessa Costa',
+        'Hugo Gonçalves',
+        'Lorena Rodrigues',
+        'Geraldo Santos',
+        'Priscila Oliveira',
+        'Alexandre Pereira',
+        'Fátima Ribeiro',
+        'Wagner Carvalho',
+        'Mariana Alves',
+        'Roberto Rodrigues',
+        'Carla Lima',
+        'Daniel Castro',
+        'Cláudia Carvalho',
+        'Sandro Sousa',
+        'Silvana Costa',
+        'Rafael Gonçalves',
+        'Daniela Rodrigues',
+        'Henrique Santos',
+        'Talita Oliveira',
+        'Rodrigo Pereira',
+        'Bárbara Almeida',
+        'Luciano Cardoso',
+        'Cintia Mendes',
+        'Guilherme Castro',
+        'Natália Carvalho',
+        'Raul Alves',
+        'Sabrina Ribeiro',
+        'André Rodrigues',
+        'Cristina Lima',
+        'Leandro Castro',
+        'Michele Carvalho',
+        'Marcelo Sousa',
+        'Aline Costa',
+        'Bruno Gonçalves',
+        'Márcia Rodrigues',
+        'Vitor Santos',
+        'Camila Oliveira',
+        'Felipe Pereira',
+        'Lívia Almeida',
+        'Ricardo Rodrigues',
+        'Ana Lima',
+        'Renan Castro',
+        'Fernanda Carvalho'
+    );
     
-	-- GERAR UM ÍNDICE ALEATÓRIO
-	SET INDICE = FLOOR(RAND() * 100) + 1;
+    SET name_index = FLOOR(RAND() * JSON_LENGTH(names_array));
+    SET chosen_name = JSON_UNQUOTE(JSON_EXTRACT(names_array, CONCAT('$[', name_index, ']')));
     
-	-- OBTER O NOME CORRESPONDENTE AO ÍNDICE
-	SET NOME = JSON_EXTRACT(NOMES_ARRAY, CONCAT('$[', INDICE - 1, ']'));
-    
-	RETURN NOME;
+    RETURN chosen_name;
 END //
 
 DELIMITER ;
 
 DELIMITER $$
-#DROP PROCEDURE IF EXISTS INSERTPERSONAGEM;
-CREATE PROCEDURE INSERTPERSONAGEM()
+CREATE PROCEDURE insert_character()
 BEGIN
   DECLARE I INT DEFAULT 15;
   WHILE I <= 85 DO
-	INSERT INTO TB_PERSONAGEM VALUES (I, ESCOLHER_NOME(), GERAR_CPF() , DATE_ADD('1950-01-01', INTERVAL FLOOR( (DATEDIFF('2004-12-31', '1950-01-01') + 1) * RAND() ) DAY), FLOOR(RAND()*7 + 1), FLOOR(RAND()*39 + 1), FLOOR(RAND()*10 + 1), FLOOR(RAND()*9 + 1), FLOOR(RAND()*5 + 1), FLOOR(RAND()*4 + 1));
+	INSERT INTO character_info VALUES (I, choose_name(), generate_ppf() , DATE_ADD('1950-01-01', INTERVAL FLOOR( (DATEDIFF('2004-12-31', '1950-01-01') + 1) * RAND() ) DAY), FLOOR(RAND()*7 + 1), FLOOR(RAND()*38 + 1), FLOOR(RAND()*10 + 1), FLOOR(RAND()*9 + 1), FLOOR(RAND()*5 + 1), FLOOR(RAND()*4 + 1));
 	SET I = I + 1;
   END WHILE;
 END;
 
 
-CALL INSERTPERSONAGEM();
+CALL insert_character();
 
-SELECT * FROM TB_PERSONAGEM;
+SELECT * FROM character_info;
