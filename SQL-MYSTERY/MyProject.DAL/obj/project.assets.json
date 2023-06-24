@@ -1017,6 +1017,16 @@
             "rid": "win"
           }
         }
+      },
+      "MyProject.MODEL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyProject.MODEL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyProject.MODEL.dll": {}
+        }
       }
     }
   },
@@ -3142,6 +3152,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MyProject.MODEL/1.0.0": {
+      "type": "project",
+      "path": "../MyProject.MODEL/MyProject.MODEL.csproj",
+      "msbuildProject": "../MyProject.MODEL/MyProject.MODEL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3150,6 +3165,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
+      "MyProject.MODEL >= 1.0.0",
       "MySql.EntityFrameworkCore >= 7.0.2",
       "Newtonsoft.Json >= 13.0.3"
     ]
@@ -3180,7 +3196,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+              "projectPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

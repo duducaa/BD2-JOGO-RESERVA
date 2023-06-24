@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MyProject.DAL</id>
+    <version>1.0.0</version>
+    <authors>MyProject.DAL</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="EntityFramework" version="6.4.4" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="7.0.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Relational" version="7.0.5" exclude="Build,Analyzers" />
+        <dependency id="MySql.EntityFrameworkCore" version="7.0.2" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\bin\Debug\net6.0\MyProject.DAL.runtimeconfig.json" target="lib\net6.0\MyProject.DAL.runtimeconfig.json" />
+    <file src="D:\programação\SQL_MYSTERY_DEFINITIVE\SQL-MYSTERY\MyProject.DAL\bin\Debug\net6.0\MyProject.DAL.dll" target="lib\net6.0\MyProject.DAL.dll" />
+  </files>
+</package>

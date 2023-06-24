@@ -6,7 +6,7 @@ namespace MyProject.DAL
 {
     public class UserCmdInsert : UserCmd
     {
-        public void InsertSolution(String query)
+        public void Insert(String query)
         {           
 
             MySqlConnection connection = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");

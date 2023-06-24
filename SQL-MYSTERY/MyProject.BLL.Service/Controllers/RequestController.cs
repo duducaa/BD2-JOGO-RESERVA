@@ -41,7 +41,7 @@ namespace MyProject.BLL.Service.Controllers
             try
             {
                 UserCmdInsert insert = new UserCmdInsert();
-                insert.InsertSolution(query);
+                insert.Insert(query);
                 Result result = new Result();
                 result.table = null;
                 result.Error = insert.GetError();

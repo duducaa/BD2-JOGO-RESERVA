@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyProject.DAL\MyProject.DAL.csproj" />
+    <ProjectReference Include="..\MyProject.MODEL\MyProject.MODEL.csproj" />
   </ItemGroup>
 
 </Project>

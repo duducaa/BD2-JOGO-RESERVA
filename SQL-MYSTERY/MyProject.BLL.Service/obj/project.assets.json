@@ -1033,6 +1033,7 @@
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.5",
+          "MyProject.MODEL": "1.0.0",
           "MySql.EntityFrameworkCore": "7.0.2",
           "Newtonsoft.Json": "13.0.3"
         },
@@ -1041,6 +1042,16 @@
         },
         "runtime": {
           "bin/placeholder/MyProject.DAL.dll": {}
+        }
+      },
+      "MyProject.MODEL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyProject.MODEL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyProject.MODEL.dll": {}
         }
       }
     }
@@ -3198,11 +3209,17 @@
       "type": "project",
       "path": "../MyProject.DAL/MyProject.DAL.csproj",
       "msbuildProject": "../MyProject.DAL/MyProject.DAL.csproj"
+    },
+    "MyProject.MODEL/1.0.0": {
+      "type": "project",
+      "path": "../MyProject.MODEL/MyProject.MODEL.csproj",
+      "msbuildProject": "../MyProject.MODEL/MyProject.MODEL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "MyProject.DAL >= 1.0.0",
+      "MyProject.MODEL >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -3236,6 +3253,9 @@
           "projectReferences": {
             "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj": {
               "projectPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj"
+            },
+            "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+              "projectPath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
             }
           }
         }
