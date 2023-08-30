@@ -41,10 +41,6 @@ namespace MyProject.BLL.Service.Controllers
             }
             catch (Exception ex)
             {
-                if (ex.Message == "Sequence contains no elements")
-                {
-                    return NotFound();
-                }
                 return StatusCode(500, ex.Message);
             }
         }
