@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rv5qtw3getjExz2PBnReXiogrCc6/8xCryrxZdiWPfelaNB8PMRZjHX7I8aXZu9nQJFk/IqtFvvj609QHCa6bw==",
+  "dgSpecHash": "yM/TQ4g7HszBz6WgfqKteJJzf5dNOgN7QTAd833ycP1K6uM3lAigbKfbzkL+h7r41figJjyolu7Z1rUPKQO3Qw==",
   "success": true,
-  "projectFilePath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj",
+  "projectFilePath": "D:\\programação\\SQL_MYSTERY_DEFINITIVE\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\duduc\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\duduc\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
