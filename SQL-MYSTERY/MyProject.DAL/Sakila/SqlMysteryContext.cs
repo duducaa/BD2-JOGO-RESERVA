@@ -22,7 +22,7 @@ public partial class SqlMysteryContext : DbContext
 
     public virtual DbSet<UserData> UsersData { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseMySQL("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseMySQL("Server=localhost;Database=sql_mystery;Uid=web-user;Pwd=web1234web;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

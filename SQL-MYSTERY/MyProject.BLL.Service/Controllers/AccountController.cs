@@ -16,7 +16,7 @@ namespace MyProject.BLL.Service.Controllers
             {
                 using (SqlMysteryContext context = new SqlMysteryContext())
                 {
-                    context.Add(user);
+                    context.UsersData.Add(user);
                     context.SaveChanges();
                 }
                 return Ok("Signed up successfully!!!");
@@ -27,17 +27,24 @@ namespace MyProject.BLL.Service.Controllers
             }
         }
 
-        [HttpGet("{login}", Name = "Login")]
-        public ActionResult Get(string login)
+        public class LoginModel
+        {
+            public string? login { get; set; }
+            public string? password { get; set; }
+        }
+
+        [HttpPost("Login")]
+        public ActionResult Login([FromBody] LoginModel model)
         {
             try
             {
-                UserData user;
+                UserData _user;
                 using (SqlMysteryContext context = new SqlMysteryContext())
                 {
-                    user = context.UsersData.Single(u => u.Login == login);
+                    _user = context.UsersData.Single(u => u.Login == model.login);
+                    if (_user.HashPassword == model.password) return Ok(_user);
+                    return BadRequest("The password is incorrect!!!");
                 }
-                return Ok(user);
             }
             catch (Exception ex)
             {

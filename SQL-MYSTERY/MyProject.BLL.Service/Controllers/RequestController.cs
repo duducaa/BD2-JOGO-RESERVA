@@ -27,6 +27,7 @@ namespace MyProject.BLL.Service.Controllers
                 result.table = select.GetTable(query);
                 result.Error = select.GetError();
 
+
                 return result.table != null ? Ok(JsonConvert.SerializeObject(result)) : NotFound();
             }
             catch (Exception ex)
@@ -46,11 +47,11 @@ namespace MyProject.BLL.Service.Controllers
                 result.table = null;
                 result.Error = insert.GetError();
 
-                if (Convert.ToInt32(result.Error["Code"]) == 1062 && query.Trim().Split(" ")[2].ToUpper() == "TB_SOLUCAO")
+                if (Convert.ToInt32(result.Error["Code"]) == 1062 && query.Trim().Split(" ")[2].ToUpper() == "SOLUTION")
                 {
-                    result.Error["Message"] = "Parabéns, você encontrou o assassino!!! Devido a seu ato de bravura e coragem, " +
-                                            "o país agora conhece o nome de James Buggy, um dos melhores detetives. " +
-                                            "De agora em diante, fique atento ao seu comunicador, porque, com certeza, mais casos aparecerão. Até breve!!!";
+                    result.Error["Message"] = "Congratulations, you found the killer!!! Due to his act of bravery and courage," +
+                        "the country now knows the name of James Buggy, one of the finest detectives."
+                        +"From now on, stay tuned to your communicator because, for sure, more cases will appear. See you soon!!!";
                 }
 
                 return Ok(JsonConvert.SerializeObject(result));
